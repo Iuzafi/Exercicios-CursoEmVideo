@@ -1,0 +1,39 @@
+algoritmo "semnome"
+var
+   nome: vetor [1..3] de caractere
+   n1: vetor [1..3] de real
+   n2: vetor [1..3] de real
+   media: vetor [1..3] de real
+   sm, mt: real
+   c, tot: inteiro
+inicio
+      Para c de 1 ate 3 faca
+           Escreva ("Digite o nome do", c, "° aluno: ")
+           Leia (nome[c])
+           Escreva ("Digite a nota 1 do", c, "° aluno: ")
+           Leia (n1[c])
+           Escreva ("Digite a nota 2 do", c, "° aluno: ")
+           Leia (n2[c])
+           media[c] <- (n1[c] + n2[c])/2
+           sm <- sm + media[c]
+           mt <- sm/3
+      FimPara
+      limpatela
+      
+      Escreval ("A media da turma foi de ", MT:3:1)
+      Escreval
+      Para c de 1 ate 3 faca
+           Escreval ("A media de ", nome[c]:20, " é de", media[c]:4:1)
+           Se (media[c] > mt) Entao
+              tot <- tot + 1
+           FimSe
+      FimPara
+      Escreval
+      Escreval ("O total de alunos acima da média foi de", tot)
+      
+      Para c de 1  ate 3 Faca
+           Se (media[c] > MT) Entao
+              Escreval (nome[c], " tem media ", media[c]:4:1, " e está acima da media da turma.")
+           FimSe
+      FimPara
+fimalgoritmo
