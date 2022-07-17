@@ -1,0 +1,28 @@
+algoritmo "Tabela de Partidas"
+var
+   time: vetor [1..3] de caractere
+   C, Z: inteiro
+inicio
+      Escreval ("-----------------------")
+      Escreval (" CAMPEONATO DE FUTEBOL")
+      Escreval ("-----------------------")
+
+      Para c de 1 ate 3 Faca
+           Escreva ("Nome do 1o. time: ")
+           Leia (time[c])
+      FimPara
+      LimpaTela
+      
+      Escreval ("--------------------")
+      Escreval (" TABELA DE PARTIDAS ")
+      Escreval ("--------------------")
+      
+      Para c de 1 ate 3 Faca
+           Para z de 1 ate 3 Faca
+                Se (c <> z) Entao
+                   Escreval (time[c]:15, "[ ] x [ ] ", time[z])
+                FimSe
+           FimPara
+      FimPara
+      
+fimalgoritmo
