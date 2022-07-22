@@ -1,0 +1,65 @@
+algoritmo "Correção de Provas"
+// Função : Corrigir provas apartir de um gabarito pre-estabelecido
+// Autor :  Vinicius Fiuza
+// Data : 21/07/2022
+// Seção de Declarações 
+var
+   gab: vetor [1..5] de caractere
+   nome: vetor [1..3] de caractere
+   resp: vetor [1..3, 1..5] de caractere
+   nota: vetor [1..3] de inteiro
+   media: real
+   C, Z: inteiro
+inicio
+// Seção de Comandos
+
+      Escreval ("----------------------")
+      Escreval (" Cadastro de Gabarito")
+      Escreval ("----------------------")
+
+      //Leitura das alternativas corretas do gabarito
+      Para z de 1 ate 5 Faca
+           Escreva ("Resposta Questao", z, ": ")
+           Leia (gab[z])
+      FimPara
+      LimpaTela
+
+      //Leitura dos nomes do alunos
+      Para c de 1 ate 3 Faca
+           Escreval ("---------")
+           Escreval (" Aluno", c)
+           Escreval ("---------")
+           Escreva ("Nome: ")
+           Leia (nome[c])
+           Escreval ("RESPOSTAS DADAS")
+
+           //Leitura das respostas utilizando um vetor de 2 posições
+           //para identificar o aluno (C) e as respostas (Z)
+           Para z de 1 ate 5 Faca
+                Escreva ("Questao", z, ": ")
+                Leia (resp[c, z])
+           FimPara
+           LimpaTela
+      FimPara
+
+      Escreval ("------------------")
+      Escreval ("   NOTAS FINAIS")
+      Escreval ("------------------")
+
+      // Analise das respostas dos alunos
+      // cada resposta certa da 2 pontos aos alunos
+      // A nota de cada um é somada a media
+      Para c de 1 ate 3 Faca
+           Para z de 1 ate 5 Faca
+                Se (resp[c, z] = gab[z]) Entao
+                   nota[c] <- nota[c] + 2
+                FimSe
+           FimPara
+           Escreval (nome[c]:10, nota[c]:2:1)
+           media <- nota[c] + media
+      FimPara
+
+      media <- media/3
+      Escreval ("------------------")
+      Escreval ("Media da Turma: ", media:3:1)
+fimalgoritmo
