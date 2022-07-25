@@ -1,0 +1,24 @@
+algoritmo "Questão 05"
+// Função : Ler as duas notas de um aluno e mostrar na tela a sua média
+// Autor : Vinicius Fiuza
+// Data : 24/07/2022
+// Seção de Declarações 
+var
+   nota1, nota2: real
+   media: real
+inicio
+// Seção de Comandos
+
+      Escreva ("Digite a nota 1: ")
+      Leia (nota1)
+      Escreva ("Digite a nota 2: ")
+      Leia (nota2)
+      
+      // Comando da fórmula da media
+      
+      media <- (nota1 + nota2)/2
+
+      // Saida dos resultados
+      
+      Escreva ("A média entre", nota1, " e", nota2, " é igual a", media)
+fimalgoritmo
