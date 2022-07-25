@@ -1,0 +1,32 @@
+algoritmo "Questão 03 "
+// Função : Crie um programa que leia o nome e o salário de um funcionário, mostrando no
+// final uma mensagem
+// Autor : Vinicius Fiuza
+// Data : 24/07/2022
+// Seção de Declarações 
+var
+   nome: caractere
+   sal: real
+inicio
+// Seção de Comandos
+ 
+      //Comandos de saida e entrada das informações desejadas
+
+      Escreva ("Digite seu nome: ")
+      Leia (nome)
+      Escreva ("Digite seu salário: ")
+      Leia (sal)
+      
+      // Comando de saida com as informações fornecidas
+      
+      Escreval ("Nome do funcionário: ", nome)
+      Escreval ("Salário: ", sal:7:2)
+      Escreval ("O funcionário ", nome, " tem um salário de R$", sal:7:2, " em Junho.")
+
+      // Ao usar ":10:2" após a variável de salário
+      // o comando de saida que no caso é um número real
+      // informará apenas 7 algarismo antes da vírgula e 2 após a vírgula
+      // para deixar a aparência visual do código mais limpa.
+
+
+fimalgoritmo
