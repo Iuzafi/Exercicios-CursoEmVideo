@@ -1,0 +1,12 @@
+algoritmo "Questão 01"
+// Função : Escreva um algoritmo que escreva na tela "Olá, mundo!"
+// Autor : Vinicius Fiuza
+// Data : 21/07/2022
+// Seção de Declarações 
+var
+
+inicio
+// Seção de Comandos
+
+      Escreva ("Olá, Mundo!")
+fimalgoritmo
