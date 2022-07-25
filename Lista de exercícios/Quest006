@@ -1,0 +1,25 @@
+algoritmo "Questão 06"
+// Função : Leia um número inteiro e mostre o seu antecessor e seu sucessor
+// Autor : Vinicius Fiuza
+// Data : 24/07/2022
+// Seção de Declarações 
+var
+   val: inteiro
+   ant, suc: inteiro
+inicio
+// Seção de Comandos
+
+      // Entrada do valor
+
+      Escreva ("Digite um valor: ")
+      Leia (val)
+      
+      // Programa vai calcular e mostrar o antecessor e sucessor
+      // utilizando operação soma e subtração
+      
+      ant <- (val - 1)
+      suc <- (val + 1)
+      
+      Escreval ("O antecessor de", val, " é", ant)
+      Escreval ("O sucessor de", val, " é", suc)
+fimalgoritmo
