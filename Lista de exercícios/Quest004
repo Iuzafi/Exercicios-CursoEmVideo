@@ -1,0 +1,27 @@
+algoritmo "Questão 04"
+// Função : algoritmo que leia dois números inteiros e mostre o somatório
+// entre eles
+// Autor : Vinicius Fiuza
+// Data : 24/07/2022
+// Seção de Declarações 
+var
+   vaL1, vaL2: inteiro
+   soma: inteiro
+inicio
+// Seção de Comandos
+
+      // Entrada dos valores a serem somados
+      
+      Escreva ("Digite um valor inteiro: ")
+      Leia (val1)
+      Escreva ("Digite outro valor inteiro: ")
+      Leia (val2)
+      
+      // Comando da fórmula da soma dos valores
+      
+      soma <- (val1 + val2)
+      
+      // Comando de saida dos resultados
+ 
+      Escreva ("A soma entre", val1, " e", val2, " é igual a", soma)
+fimalgoritmo
