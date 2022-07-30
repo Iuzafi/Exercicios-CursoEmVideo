@@ -1,0 +1,61 @@
+algoritmo "Questão 08"
+// Função : Ler distancia em metros e devolver em outras medidas
+// Autor : Vinicius Fiuza
+// Data : 30/07/2022
+// Seção de Declarações 
+var
+   dist: real
+inicio
+// Seção de Comandos
+
+      // Leitura do valor em metros dado pelo usuário
+      
+      Escreva ("Digite a distancia em metros: ")
+      Leia (dist)
+      Escreval()
+      
+      // Conversão das medidas de metros para outras unidades
+      // com base no Sistema Internacional de Unidades (SI)
+      // Seria possível criar uma variável para cada medida
+      // Porém será feita a conversão imediata na saida dos valores
+      
+      Escreval ("A distancia de", dist, " metros corresponde a:")
+      Escreval ()
+      Escreval ((dist / 1000), " Km")
+      Escreval ((dist / 100), " Hm")
+      Escreval ((dist / 10), " Dam")
+      Escreval ((dist * 10), " Dm")
+      Escreval ((dist * 100), " Cm")
+      Escreval ((dist * 1000), " Mm")
+ 
+fimalgoritmoalgoritmo "Questão 08"
+// Função : Ler distancia em metros e devolver em outras medidas
+// Autor : Vinicius Fiuza
+// Data : 30/07/2022
+// Seção de Declarações 
+var
+   dist: real
+inicio
+// Seção de Comandos
+
+      // Leitura do valor em metros dado pelo usuário
+      
+      Escreva ("Digite a distancia em metros: ")
+      Leia (dist)
+      Escreval()
+      
+      // Conversão das medidas de metros para outras unidades
+      // com base no Sistema Internacional de Unidades (SI)
+      // Seria possível criar uma variável para cada medida
+      // Porém será feita a conversão imediata na saida dos valores
+      
+      Escreval ("A distancia de", dist, " metros corresponde a:")
+      Escreval ()
+      Escreval ((dist / 1000), " Km")
+      Escreval ((dist / 100), " Hm")
+      Escreval ((dist / 10), " Dam")
+      Escreval ((dist * 10), " Dm")
+      Escreval ((dist * 100), " Cm")
+      Escreval ((dist * 1000), " Mm")
+ 
+fimalgoritmo
