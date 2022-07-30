@@ -1,0 +1,27 @@
+algoritmo "Questão 07"
+// Função : Algoritmo que leia um número real e mostre seu dobro e a terça parte
+// Autor : Vinicius Fiuza
+// Data : 29/07/2022
+// Seção de Declarações 
+var
+   val: real
+   dob, ter: real
+inicio
+// Seção de Comandos
+
+       // Entrada do valor
+       
+       Escreva ("Digite um valor: ")
+       Leia (val)
+       
+       // Comando do calculo do dobro e da terça parte
+       
+       dob <- (val * 2)
+       ter <- (val / 3)
+       
+       // Saida dos resultados
+       
+       Escreval ("O dobro de", val, " é", dob)
+       Escreval ("O terço de", val, " é", ter)
+ 
+fimalgoritmo
