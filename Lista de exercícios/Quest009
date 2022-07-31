@@ -1,0 +1,24 @@
+algoritmo "Questão 09"
+// Função : Ler quanto dinheiro uma pessoa tem e devolve quantia em dólar.
+// Autor : Vinicius Fiuza
+// Data : 30/07/2022
+// Seção de Declarações 
+var
+   din, dolar: real
+inicio
+// Seção de Comandos
+
+      // Leitura do valor
+      
+      Escreva ("Digite o valor em R$: ")
+      Leia (din)
+      
+      // Para conversao do valor de real para dolar
+      // vamos considerar o dolar a R$ 5,00
+ 
+      dolar <- (din / 5)
+      
+      // Saida dos resultados
+      
+      Escreval ("A quantia de R$", din:6:2, " equivale a $", dolar:6:2)
+fimalgoritmo
