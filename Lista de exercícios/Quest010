@@ -1,0 +1,34 @@
+algoritmo "Questão 10"
+// Função : Faça um algoritmo que leia a largura e altura de uma parede, calcule e
+// mostre a área a ser pintada e a quantidade de tinta necessária para o serviço,
+// sabendo que cada litro de tinta pinta uma área de 2 metros quadrados.
+// Autor : Vinicius Fiuza
+// Data : 01/08/2022
+// Seção de Declarações 
+var
+   lar, alt, area, tinta: real
+inicio
+// Seção de Comandos
+
+
+      // Para calculo da área precisamos saber a largura e a altura da parede
+      
+      Escreva ("Digite a largura da parede [metros]: ")
+      Leia (lar)
+      Escreva ("Digite a altura da parede [metros]: ")
+      Leia (alt)
+      
+      // A formula de para cálculo de área é A = b * h
+      // Sendo "b" a largura e "h" altura
+      
+      area <- (lar * alt)
+      
+      // Sabendo que para cada 2 metros quadrados é utilizado um litro de tinta
+
+      tinta <- (area / 2)
+      
+      // Saida dos resultados
+      
+      Escreval ("A área da parede é de", area, " metros quadrados.")
+      Escreval ("A quantidade de tinta necessário para pintar a parede é de", tinta, " litros.")
+fimalgoritmo
