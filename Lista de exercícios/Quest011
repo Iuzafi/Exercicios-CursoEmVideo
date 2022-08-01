@@ -1,0 +1,45 @@
+algoritmo "Questão 11"
+// Função : Desenvolva uma lógica que leia os valores de A, B e C de uma equação do
+// segundo grau e mostre o valor de Delta e suas raízes reais.
+// Autor : Vinicius Fiuza
+// Data : 01/08/2022
+// Seção de Declarações
+var
+   A, B, C: real
+   x1, x2, delta: real
+inicio
+// Seção de comandos
+
+      // Primeiro precisamos saber o valor de cada
+
+      Escreval ("Digite o valor de 'A, B e C' respectivamente: ")
+      Leia (a, b, c)
+      
+      // Seguindo a formula do discriminante (delta) escrevemos a expressão
+
+      delta := (b^2 - 4*a*c)
+
+      // Sabendo da relação do delta com as parábolas temos 3 condições
+      
+      // Delta < 0 não contendo raízes reais
+      Se (delta < 0) Entao
+         Escreval ("O valor de delta é: ", delta)
+         Escreval ("Não existem raízes reais.")
+      Senao
+           // Delta = 0 contendo apenas uma raíz real
+           Se (delta = 0) Entao
+              x1 <- -b/(2*a)
+              Escreval ("O valor de delta é: ", delta)
+              Escreval ("x' = x'' = ", x1:6:2)
+              
+           // Delta > 0 contendo duas raízes reais
+           // Nesse caso utilizamos a formula de bhaskara para definir o valor de cada raiz
+           Senao
+                x1 <- (-b - raizq(delta)) / (2*a)
+                x2 <- (-b + raizq(delta)) / (2*a)
+                Escreval ("O valor de delta é: ", delta)
+                Escreval ("Negativo (x'): ", x1:6:2)
+                Escreval ("Positivo (x''): ", x2:6:2)
+           fimse
+      fimse
+fimalgoritmo
