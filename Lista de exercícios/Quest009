@@ -14,7 +14,7 @@ inicio
       Leia (din)
       
       // Para conversao do valor de real para dolar
-      // vamos considerar o dolar a R$ 5,00
+      // vamos considerar $ 1,00 dolar equivale a R$ 5,00
  
       dolar <- (din / 5)
       
