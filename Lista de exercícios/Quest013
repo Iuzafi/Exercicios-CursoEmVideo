@@ -1,0 +1,30 @@
+algoritmo "Questão 13"
+// Função : leia o salário de um funcionário, calcule e mostre o
+// seu novo salário, com 15% de aumento.
+// Autor : Vinicius Fiuza
+// Data : 05/08/2022
+// Seção de Declarações 
+var
+   nome: caractere
+   salario, salariof, aumento: real
+inicio
+// Seção de Comandos
+
+      // Precisamos saber quanto o funcionário recebe de salário
+      
+      Escreva ("Digite seu nome: ")
+      Leia (nome)
+      Escreva ("Digite seu salário: ")
+      Leia (salario)
+      
+      // Vamos calcular o valor do aumento do salário
+
+      aumento <- (salario * 15)/100
+      salariof <- (salario + aumento)
+      
+      // Então mostrar ao funcionário seu novo salario e o valor do aumento
+      
+      LimpaTela
+      Escreval (nome, ", você recebeu um aumento de R$", aumento:5:2)
+      Escreva ("Seu novo salário é de R$", salariof:5:2)
+fimalgoritmo
