@@ -1,0 +1,29 @@
+algoritmo "Questão 12"
+// Função : leia o preço de um produto, calcule e mostre o seu
+// PREÇO PROMOCIONAL, com 5% de desconto.
+// Autor : Vinicius Fiuza
+// Data : 05/08/2022
+// Seção de Declarações 
+var
+   valor, desc, valorf: real
+inicio
+// Seção de Comandos
+
+      // Entrada do valor original do produto
+      
+      Escreva ("Digite o valor do produto: ")
+      Leia (valor)
+      
+      // Calculo do desconto e calculo do valor final do produto
+      // Com uma varíavel para cada função
+      
+      desc <- (valor * 5)/100
+      valorf <- (valor - desc)]
+      
+      // Saida dos resultados
+      
+      LimpaTela
+      Escreval ("Valor original do produto: R$", valor:5:2)
+      Escreval ("Valor do desconto de 5%: R$", desc:5:2)
+      Escreval ("Valor final do produto: R$", valorf:5:2)
+fimalgoritmo
