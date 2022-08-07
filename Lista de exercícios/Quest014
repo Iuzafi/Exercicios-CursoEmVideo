@@ -1,0 +1,44 @@
+algoritmo "Questão 14"
+// Função : Calcule o preço a pagar pelo aluguel de um carro
+// Autor : Vinicius Fiuza
+// Data : 07/08/2022
+// Seção de Declarações 
+var
+   nome: caractere
+   dias: inteiro
+   km, Valor: real
+inicio
+// Seção de Comandos
+
+       // Menu
+       
+       Escreval ("---------------")
+       Escreval (" FZA RENTS FZA")
+       Escreval ("---------------")
+       Escreval
+
+      // Considere o preço fixo do carro é de R$90 por dia e R$0,20 por Km rodado
+      // Precisamos saber quantos dias o carro foi alugado e quantos Km foram rodados
+      
+      Escreva ("Olá, digite seu nome: ")
+      Leia (Nome)
+      Escreva ("Quantos dias o carro foi alugado? ")
+      Leia (dias)
+      Escreva ("Quantos KM's foram percorridos? ")
+      Leia (km)
+      
+      // Cálculo e atribuição do valor a ser pago pelo cliente
+      
+      Valor <- (dias * 90) + (km * 0.2)
+      
+      // Saida dos valores
+      
+      LimpaTela
+      Escreval ("---------------")
+      Escreval (" FZA RENTS FZA")
+      Escreval ("---------------")
+      Escreval
+      Escreva (nome, " o valor total a ser pago é de R$", Valor:5:2)
+      Escreval
+      
+fimalgoritmo
