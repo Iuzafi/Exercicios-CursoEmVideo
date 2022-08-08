@@ -1,0 +1,53 @@
+algoritmo "Questão 16"
+// Função : Calcular a redução do tempo de vida de um fumante em dias xD
+// Autor : Vinicius Fiuza
+// Data : 07/08/2022
+// Seção de Declarações 
+var
+   nome: caractere
+   cig, anos: inteiro
+   HorasFumadas, HorasPerdidas, TempoTotal: real
+inicio
+// Seção de Comandos
+
+      // Menu
+
+      Escreval ("--------------------")
+      Escreval (" FUMANTE CALCULATOR")
+      Escreval ("--------------------")
+      Escreval
+      Escreval ("Vamos calcular quantos anos de vida perderás para o cigarro.")
+      Escreval
+      
+      // Entrada dos dados
+      // Precisamos saber a quantidade de cigarros fumados por dia e quantos anos ele já fumou
+      // Considere que cada cigarro reduz em 10 minutos o tempo de vida
+      
+      Escreva ("Olá, qual o seu nome? ")
+      Leia (nome)
+      Escreva (nome, ", quantos cigarros você fuma por dia? ")
+      Leia (cig)
+      Escreva (nome, ", há quantos anos você fuma? ")
+      Leia (anos)
+      
+      // Cálculos do tempo perdido em dias por essa pessoa
+      // Considere o ano com 365 dias
+      
+      HorasFumadas <- (cig * 10) / 60            // tempo em HORAS perdidos por dia
+      HorasPerdidas <- (HorasFumadas * 365) / 24 // tempo em HORAS perdidos por ano
+      tempoTotal <- (HorasPerdidas * anos)        // tempo em DIAS perdidos total
+      
+      // Saida dos resultados
+      
+      LimpaTela
+      Escreval ("--------------------")
+      Escreval (" FUMANTE CALCULATOR")
+      Escreval ("--------------------")
+      Escreval
+      Escreval (nome, ", você perdeu aproximadamente ", tempoTotal:2, " dias de vida.")
+      Escreval
+      Escreval ("FUMAR CAUSA CANCER, PARE IMEDIATAMENTE!")
+      Escreval ("LIGUE 136!")
+      Escreval
+      
+fimalgoritmo
