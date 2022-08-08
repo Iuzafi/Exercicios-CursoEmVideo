@@ -1,0 +1,42 @@
+algoritmo "Questão 19"
+// Função : Ler as notas e medias e informar o aproveitamento
+// Autor : Vinicius Fiuza
+// Data : 08/08/2022
+// Seção de Declarações 
+var
+   nome: caractere
+   n1, n2, media: real
+inicio
+// Seção de Comandos
+
+      // Menu
+      
+      Escreval ("-------------")
+      Escreval (" ANALISADOR DE NOTA 5000")
+      Escreval ("-------------")
+      Escreval
+      
+      // Entrada de dados
+      
+      Escreva ("Digite seu nome: ")
+      Leia (nome)
+      Escreva ("Digite a 1° nota: ")
+      Leia (n1)
+      Escreva ("Digite a 2° nota: ")
+      Leia (n2)
+      Escreval
+      
+      // Calculo media
+      
+      media <- (n1 + n2) / 2
+      
+      // Analise de condição
+      
+      Se (media > 7) Entao
+         Escreval (nome, ", Obteve um bom aproveitamento.")
+         Escreval ("Media: ", media:2:1)
+      Senao
+         Escreval (nome, ", não obteve um bom aproveitamento.")
+         Escreval ("Media: ", media:2:1)
+      FimSe
+fimalgoritmo
