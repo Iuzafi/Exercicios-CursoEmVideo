@@ -38,7 +38,5 @@ inicio
       Escreval (" FZA RENTS FZA")
       Escreval ("---------------")
       Escreval
-      Escreva (nome, " o valor total a ser pago é de R$", Valor:5:2)
-      Escreval
-      
+      Escreval (nome, " o valor total a ser pago é de R$", Valor:5:2)      
 fimalgoritmo
