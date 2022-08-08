@@ -35,7 +35,5 @@ inicio
       Escreval (" FZA FOLHA SALARIAL")
       Escreval ("--------------------")
       Escreval
-      Escreva (nome, ", seu salário esse mês é de R$", salario:5:2)
-      Escreval
-      
+      Escreval (nome, ", seu salário esse mês é de R$", salario:5:2)
 fimalgoritmo
