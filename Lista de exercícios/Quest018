@@ -1,0 +1,33 @@
+algoritmo "Questão 18"
+// Função : Ler o ano de nascimento de uma pessoa e informar se ela pode ou não votar
+// Autor : Vinicius Fiuza
+// Data : 07/08/2022
+// Seção de Declarações 
+var
+   nome: caractere
+   ano, idade: inteiro
+inicio
+// Seção de Comandos
+
+      // Entrada de dados
+      
+      Escreva ("Digite seu nome: ")
+      Leia (nome)
+      Escreva ("Digite o ano do seu nascimento: ")
+      Leia (ano)
+      Escreval
+      
+      // Calculo de idade da pessoa
+      
+      idade <- (2022 - ano)
+      
+      // Verificação se ela pode votar ou não
+      
+      Se (idade >= 16) e (idade < 18) Entao
+         Escreva (nome, ", você tem mais que 16 anos e já pode votar!")
+      Senao
+         Se (idade >= 18) Entao
+            Escreva (nome, ", você tem mais de 18 anos de já pode votar!")
+         FimSe
+      FimSe 
+fimalgoritmo
