@@ -1,0 +1,38 @@
+algoritmo "Questão 17"
+// Função : Multar carro caso ultrapasse 80Km/h e cobre R$5 por Km excedido
+// Autor : Vinicius Fiuza
+// Data : 07/08/2022
+// Seção de Declarações 
+var
+   velocidade, excesso, multa: inteiro
+inicio
+// Seção de Comandos
+
+      // Menu
+      
+      Escreval ("------------------")
+      Escreval (" RADAR PASSA NADA")
+      Escreval ("------------------")
+      Escreval
+      
+      // Entrada da velocidade do carro
+      
+      Escreva ("Digite a velocidade do carro [Km/h]: ")
+      Leia (velocidade)
+      Escreval
+
+      // Verificação da condição para que a multa seja aplicada ou não
+      // Nesse caso se o carro estiver acima de 80Km/h ele será multado
+      
+      Se (velocidade > 80) Entao
+         
+         // Precisamos saber qual o excesso de velocidade para calcular a multa
+         
+         excesso <- (velocidade - 80)
+         multa <- (excesso * 5)
+         
+         Escreval ("Você foi multado em R$", multa:5:2)
+      Senao
+         Escreval ("Você está dentro do limite permitido!")
+      FimSe
+fimalgoritmo
