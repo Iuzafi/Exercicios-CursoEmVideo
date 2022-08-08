@@ -1,0 +1,41 @@
+algoritmo "Questão 15"
+// Função : Ler os dias trabalhados por um funcionario e mostrar seu salario
+// Autor : Vinicius Fiuza
+// Data : 07/08/2022
+// Seção de Declarações 
+var
+   nome: caractere
+   dias: inteiro
+   salario: real
+inicio
+// Seção de Comandos
+
+      // Menu
+      
+      Escreval ("--------------------")
+      Escreval (" FZA FOLHA SALARIAL")
+      Escreval ("--------------------")
+      Escreval
+      
+      // Identificação do funcionário e entrada dos dias trabalhados
+      
+      Escreva ("Digite seu nome: ")
+      Leia (nome)
+      Escreva ("Quantos dias foram trabalhados esse mês? ")
+      Leia (dias)
+      
+      // O funcionário trabalha 8 horas por dia e recebe R$6,50 por hora
+
+      salario <- (dias * 8) * 6.5
+      
+      // Saida dos resultados
+      
+      LimpaTela
+      Escreval ("--------------------")
+      Escreval (" FZA FOLHA SALARIAL")
+      Escreval ("--------------------")
+      Escreval
+      Escreva (nome, ", seu salário esse mês é de R$", salario:5:2)
+      Escreval
+      
+fimalgoritmo
